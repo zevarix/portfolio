@@ -1,6 +1,6 @@
 {
     "name": "drupal/recommended-project",
-    "description": "Project template for Drupal 9 projects with a relocated document root",
+    "description": "Project template for Drupal projects with a relocated document root",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
@@ -15,34 +15,10 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.9",
-        "drupal/admin_toolbar": "^3.1",
-        "drupal/core-composer-scaffold": "^9.3",
-        "drupal/core-project-message": "^9.3",
-        "drupal/core-recommended": "^9.3",
-        "drupal/devel": "^4.1",
-        "drupal/paragraphs": "^1.14",
-        "drupal/pathauto": "^1.9",
-        "drupal/redirect": "^1.7",
-        "drupal/twig_tweak": "^3.1",
-        "drupal/webform": "^6.1",
-        "drupal/auto_entitylabel": "3.x-dev@dev",
-        "drupal/block_field": "^1.0@RC",
-        "drupal/config_ignore": "3.x-dev@dev",
-        "drupal/filefield_paths": "^1.0@beta",
-        "drupal/image_field_caption": "^1.1",
-        "drupal/link_attributes": "^1.11",
-        "drupal/module_filter": "^3.2",
-        "drupal/queue_ui": "^2.2",
-        "drupal/rabbit_hole": "^1.0@beta",
-        "drupal/recaptcha": "^3.0",
-        "drupal/recaptcha_v3": "^1.5",
-        "drupal/smtp": "^1.0",
-        "drupal/token": "^1.9",
-        "drupal/ultimate_cron": "^2.0@alpha",
-        "drupal/video_embed_field": "^2.4",
-        "drupal/views_bootstrap": "^4.3",
-        "drush/drush": "^10"
+        "composer/installers": "^2.0",
+        "drupal/core-composer-scaffold": "^11.0",
+        "drupal/core-project-message": "^11.0",
+        "drupal/core-recommended": "^11.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -50,6 +26,14 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true
+        },
         "sort-packages": true
     },
     "extra": {
@@ -99,7 +83,7 @@
                 "<bg=blue;fg=white>                                                         </>",
                 "",
                 "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Install the site: https://www.drupal.org/docs/installing-drupal",
                 "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
                 "  * Get support: https://www.drupal.org/support",
                 "  * Get involved with the Drupal community:",
